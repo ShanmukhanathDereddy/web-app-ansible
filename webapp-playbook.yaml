@@ -1,0 +1,10 @@
+-
+  name: Deploying a web application
+  hosts: all
+  roles:
+    - python
+    - mysql_db
+    - flask_web
+
+    
+          

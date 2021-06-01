@@ -1,0 +1,12 @@
+    - name: Installing epel release
+      yum:
+        name: epel-release
+        state: present
+
+    - name: Install python and required dependencies
+      yum: 
+        name: "{{ item }}" 
+        state: present
+      with_items: 
+        - python3
+        - python-devel 
